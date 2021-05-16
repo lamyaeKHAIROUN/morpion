@@ -46,8 +46,8 @@ public class AideController implements Initializable {
 			parentContainer.getChildren().add(root);
 			
 			Timeline timeLine = new Timeline();
-			KeyValue kv = new KeyValue(root.translateYProperty(), 0 , Interpolator.EASE_IN);
-			KeyFrame kf = new KeyFrame(Duration.seconds(1), kv);
+			KeyValue kv = new KeyValue(root.translateYProperty(), 0 , Interpolator.DISCRETE);
+			KeyFrame kf = new KeyFrame(Duration.seconds(0.4), kv);
 			timeLine.getKeyFrames().add(kf);
 			timeLine.setOnFinished(event1 -> {
 				 parentContainer.getChildren().remove(background);

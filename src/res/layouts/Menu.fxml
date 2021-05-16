@@ -8,16 +8,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
 
-<StackPane fx:id="parentContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+<StackPane fx:id="parentContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
    <children>
       <AnchorPane fx:id="background" prefHeight="659.0" prefWidth="900.0">
          <children>
-            <Button id="twoPlayers" fx:id="twoPlayers" layoutX="54.0" layoutY="416.0" mnemonicParsing="false" onAction="#pastToTwoPlayersScene" prefHeight="73.0" prefWidth="257.0" text="VS Joueur" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="589.0">
+            <Button id="twoPlayers" fx:id="twoPlayers" layoutX="54.0" layoutY="416.0" mnemonicParsing="false" onAction="#pastToTwoPlayersScene" prefHeight="73.0" prefWidth="257.0" text="Player VS Player" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="589.0">
                <cursor>
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Button>
-            <Button id="soloGame" fx:id="soloGame" layoutX="52.0" layoutY="517.0" mnemonicParsing="false" onAction="#pastToOnePlayerScene" prefHeight="73.0" prefWidth="257.0" text="VS Machine" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="591.0">
+            <Button id="soloGame" fx:id="soloGame" layoutX="52.0" layoutY="517.0" mnemonicParsing="false" onAction="#pastToOnePlayerScene" prefHeight="73.0" prefWidth="257.0" text="Player VS Machine" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="591.0">
                <cursor>
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
@@ -27,17 +27,17 @@
                   <Image url="@../img/Tic_tac_toe.gif" />
                </image>
             </ImageView>
-            <Button id="newPart" fx:id="newPart" layoutX="321.0" layoutY="319.0" mnemonicParsing="false" onAction="#newPart" prefHeight="73.0" prefWidth="257.0" text="Nouvelle Partie">
+            <Button id="newPart" fx:id="newPart" layoutX="321.0" layoutY="319.0" mnemonicParsing="false" onAction="#newPart" prefHeight="73.0" prefWidth="257.0" text="New Game">
                <cursor>
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Button>
-            <Button id="restartPart" fx:id="restartPart" layoutX="322.0" layoutY="221.0" mnemonicParsing="false" onAction="#restartPart" prefHeight="73.0" prefWidth="257.0" text="Reprendre Partie">
+            <Button id="restartPart" fx:id="restartPart" layoutX="322.0" layoutY="221.0" mnemonicParsing="false" onAction="#restartPart" prefHeight="73.0" prefWidth="257.0" text="Resume Game">
                <cursor>
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Button>
-            <Button id="aide" fx:id="aide" layoutX="322.0" layoutY="416.0" mnemonicParsing="false" onAction="#aideButton" prefHeight="73.0" prefWidth="257.0" text="Aide">
+            <Button id="aide" fx:id="aide" layoutX="322.0" layoutY="416.0" mnemonicParsing="false" onAction="#aideButton" prefHeight="73.0" prefWidth="257.0" text="Help">
                <cursor>
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>

@@ -20,14 +20,14 @@
             <Rectangle2D />
          </viewport>
       </ImageView>
-   	  <Button fx:id="returnMenu" layoutX="24.0" layoutY="620.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="50.0" prefWidth="143.0" text="Retour" AnchorPane.topAnchor="620.0">
+      <Button fx:id="returnMenu" layoutX="24.0" layoutY="620.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="50.0" prefWidth="143.0" text="Retour" AnchorPane.topAnchor="620.0">
          <cursor>
             <Cursor fx:constant="OPEN_HAND" />
          </cursor>
       </Button>
-      
+
       <Pane fx:id="pane" layoutY="110.0" prefHeight="510" prefWidth="510" style="" AnchorPane.topAnchor="110.0" />
-      
+
       <Pane fx:id="paneMenu" layoutX="546.0" layoutY="88.0" prefHeight="510.0" prefWidth="350.0" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="546.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="88.0">
          <children>
             <Pane fx:id="paneColor" layoutX="4.0" layoutY="333.0" prefHeight="61.0" prefWidth="342.0">
@@ -61,12 +61,12 @@
       </Pane>
       <Pane layoutX="564.0" layoutY="620.0" prefHeight="50.0" prefWidth="314.0" AnchorPane.topAnchor="620.0">
          <children>
-            
-                  
+
+
             <Button fx:id="valider" layoutY="3.0" prefHeight="45.0" prefWidth="143.0" style="-fx-background-color: green;" text="Rejouer" />
             <Button fx:id="save" layoutX="152.0" layoutY="2.0" onAction="#save" prefHeight="45.0" prefWidth="158.0" style="-fx-background-color : orange" text="Sauvegarde" />
          </children>
       </Pane>
-      
+
    </children>
 </AnchorPane>

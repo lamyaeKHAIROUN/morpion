@@ -70,19 +70,13 @@ public class MenuController implements Initializable
 	
 	  private void showButton(Button b){
 		  b.setVisible(true);
-			TranslateTransition t = new TranslateTransition();
-			t.setDuration(Duration.seconds(0.7));
-			//t.setAutoReverse(true);
-			//t.setCycleCount(2);
-			t.setToX(266);
-			t.setNode(b);
-			t.play();
+
 	  }
 	
 	
 	@SuppressWarnings("unused")
 	private void redirect(String nameView , Button clicked) throws IOException{
-		
+		ActionEvent event;
 		Parent root = FXMLLoader.load(getClass().getResource("/res/layouts/" + nameView + ".fxml"));
 		
 		
@@ -92,12 +86,10 @@ public class MenuController implements Initializable
 		parentContainer.getChildren().add(root);
 		
 		Timeline timeLine = new Timeline();
-		KeyValue kv = new KeyValue(root.translateYProperty(), 0 , Interpolator.EASE_IN);
-		KeyFrame kf = new KeyFrame(Duration.seconds(1), kv);
+		KeyValue kv = new KeyValue(root.translateYProperty(), 0 , Interpolator.DISCRETE);
+		KeyFrame kf = new KeyFrame(Duration.seconds(0.5), kv);
 		timeLine.getKeyFrames().add(kf);
-		timeLine.setOnFinished(event1 -> {
-			 parentContainer.getChildren().remove(background);
-		});
+
 		timeLine.play();
 	}
 
@@ -107,9 +99,9 @@ public class MenuController implements Initializable
 	
 	@FXML
 	public void pastToTwoPlayersScene(ActionEvent event) throws IOException{
-		
+
 		redirect("TwoPlayersPanel" , twoPlayers);
-		
+
 	}
 	
 	  @FXML

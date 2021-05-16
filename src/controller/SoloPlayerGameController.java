@@ -79,7 +79,7 @@ public class SoloPlayerGameController implements Initializable
 	
 	// création d'un tableau de couleur
 	private Color [] couleurs = {Color.red , Color.white , Color.GREEN , Color.cyan , Color.gray};
-	//private String [] couleursBackground = {"red" , "white" , "green" , "aqua" , "gray"};
+	private String [] couleursBackground = {"red" , "white" , "green" , "aqua" , "gray"};
 	
     
 	// variable de logique
@@ -99,9 +99,17 @@ public class SoloPlayerGameController implements Initializable
 
 	
 
-
+	@FXML
+	public void changeGameSquareColor(){
+		int position = comboBoxColorSquare.getSelectionModel().getSelectedIndex();
+		NodeView.c = couleurs[position];
+	}
 	
-
+	@FXML
+	public void changeBackgroundColor(){
+		int position = comboBoxColorBackground.getSelectionModel().getSelectedIndex();
+		background.setStyle("-fx-background-color : " + couleursBackground[position]);
+	}
 	
 	@FXML
 	public void changeFirstTurn(){

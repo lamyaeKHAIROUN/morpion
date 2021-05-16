@@ -38,12 +38,8 @@ public class TwoPlayersGameController implements Initializable
 
 	@FXML
 	protected Button returnMenu;
-	
-	
-	@FXML
-	private AnchorPane background;
-	
-	
+
+
 	@FXML
 	protected Pane pane;
 	
@@ -51,18 +47,8 @@ public class TwoPlayersGameController implements Initializable
 	@FXML
 	protected Pane paneMenu;
 
-
-
-
-
-
-
 	@FXML
 	ImageView image;
-
-
-
-
 
 	@FXML
 	Button valider;
@@ -83,12 +69,8 @@ public class TwoPlayersGameController implements Initializable
 	@FXML
 	Label scor2;
 	 int i=0,j=0;
-	// création d'un tableau de couleur
-	//private String [] couleurs = {"red" , "white" , "green" , "aqua" , "gray"};
 	
-	
-	
-	// variable de logique
+
 	
 	public static boolean turnX = true;
 	private boolean playable = true;
@@ -112,44 +94,21 @@ public class TwoPlayersGameController implements Initializable
 		   for(int y=0 ; y<this.dimention ; y++){
 			   if(this.dimention == 3)
 			       combos.add(new Combo(board[0][y] ,board[1][y] , board[2][y]));
-			   else if(this.dimention == 4)
-				   combos.add(new Combo(board[0][y] ,board[1][y] , board[2][y], board[3][y]));
-			   else if(this.dimention == 5)
-				   combos.add(new Combo(board[0][y] ,board[1][y] , board[2][y], board[3][y] , board[4][y]));
-			   else if(this.dimention == 6)
-				   combos.add(new Combo(board[0][y] ,board[1][y] , board[2][y], board[3][y] , board[4][y] , board[5][y])); 
-			  
 			   
 		   }
 		   
 		   // vertical
 		   for(int x=0 ; x<this.dimention ; x++){
-			   switch((int)this.dimention){
-			   case 3 : combos.add(new Combo(board[x][0] ,board[x][1] , board[x][2])); break;
-			   case 4 : combos.add(new Combo(board[x][0] ,board[x][1] , board[x][2] , board[x][3])); break;
-			   case 5 : combos.add(new Combo(board[x][0] ,board[x][1] , board[x][2] , board[x][3] , board[x][4])); break;
-			   case 6 : combos.add(new Combo(board[x][0] ,board[x][1] , board[x][2] , board[x][3] , board[x][4] , board[x][5])); break;
-				   
-			   }
+			   combos.add(new Combo(board[x][0] ,board[x][1] , board[x][2]));
+
 			   
 			   
 		   }
 		   
 		   // diagonals
-		   
-		   if(this.dimention == 3){
-			   combos.add(new Combo(board[0][0] ,board[1][1] , board[2][2])); 
-			   combos.add(new Combo(board[2][0] ,board[1][1] , board[0][2])); 
-		   }else if(this.dimention == 4){
-			   combos.add(new Combo(board[0][0] ,board[1][1] , board[2][2] , board[3][3])); 
-			   combos.add(new Combo(board[3][0] ,board[2][1] , board[1][2] , board[0][3])); 
-		   }else if(this.dimention == 5){
-			   combos.add(new Combo(board[0][0] ,board[1][1] , board[2][2] , board[3][3] , board[4][4])); 
-			   combos.add(new Combo(board[4][0] ,board[3][1] , board[2][2] , board[1][3] , board[0][4])); 
-		   }else if(this.dimention == 6){
-			   combos.add(new Combo(board[0][0] ,board[1][1] , board[2][2] , board[3][3] ,  board[4][4] ,  board[5][5])); 
-			   combos.add(new Combo(board[5][0] ,board[4][1] , board[3][2] , board[2][3] , board[1][4] , board[0][5])); 
-		   }
+		combos.add(new Combo(board[0][0] ,board[1][1] , board[2][2]));
+		combos.add(new Combo(board[2][0] ,board[1][1] , board[0][2]));
+
 
 	}
 
@@ -222,23 +181,7 @@ public class TwoPlayersGameController implements Initializable
 		this.dimention = 3;
 		this.matrix = new String[this.dimention][this.dimention];
 		drawGameSquare(3 , 170);
-		/* if(x3.isSelected()){
-			 this.dimention = 3;
-			 this.matrix = new String[this.dimention][this.dimention];
-			 drawGameSquare(3 , 170);
-		 }else if(x4.isSelected()){
-			 this.dimention = 4;
-			 this.matrix = new String[this.dimention][this.dimention];
-			 drawGameSquare(4 , 127.5);
-		 }else if(x5.isSelected()){
-			 this.dimention = 5;
-			 this.matrix = new String[this.dimention][this.dimention];
-			 drawGameSquare(5, 102);
-		 }else if(x6.isSelected()){
-			 this.dimention = 6;
-			 this.matrix = new String[this.dimention][this.dimention];
-			 drawGameSquare(6, 85);
-		 }*/
+
 	}
 	
 	private void drawResumeGameSquareAccordingToDimention(int dimention , String[][] jeux){
@@ -246,36 +189,10 @@ public class TwoPlayersGameController implements Initializable
 		this.matrix = new String[this.dimention][this.dimention];
 		drawResumeGameSquare(3 , 170 , jeux);
 
-		/* if(dimention == 3){
-			 this.dimention = 3;
-			 this.matrix = new String[this.dimention][this.dimention];
-			 drawResumeGameSquare(3 , 170 , jeux);
-		 }else if(dimention == 4){
-			 this.dimention = 4;
-			 this.matrix = new String[this.dimention][this.dimention];
-			 drawResumeGameSquare(4 , 127.5 , jeux);
-		 }else if(dimention == 5){
-			 this.dimention = 5;
-			 this.matrix = new String[this.dimention][this.dimention];
-			 drawResumeGameSquare(5, 102 , jeux);
-		 }else if(dimention == 6){
-			 this.dimention = 6;
-			 this.matrix = new String[this.dimention][this.dimention];
-			 drawResumeGameSquare(6, 85 , jeux);
-		 }*/
+
 	}
 	
-	/*@FXML
-	public void changeGameSquareColor(){
-		int position = comboBoxColorSquare.getSelectionModel().getSelectedIndex();
-		pane.setStyle("-fx-background-color : " + couleurs[position]);
-	}
-	
-	@FXML
-	public void changeBackgroundColor(){
-		int position = comboBoxColorBackground.getSelectionModel().getSelectedIndex();
-		background.setStyle("-fx-background-color : " + couleurs[position]);
-	}*/
+
 
 	@FXML
 	public void changeFirstTurn(){
@@ -306,12 +223,10 @@ public class TwoPlayersGameController implements Initializable
 		parentContainer.getChildren().add(root);
 		
 		Timeline timeLine = new Timeline();
-		KeyValue kv = new KeyValue(root.translateYProperty(), 0 , Interpolator.EASE_IN);
-		KeyFrame kf = new KeyFrame(Duration.seconds(1), kv);
+		KeyValue kv = new KeyValue(root.translateYProperty(), 0 , Interpolator.DISCRETE);
+		KeyFrame kf = new KeyFrame(Duration.seconds(0.4), kv);
 		timeLine.getKeyFrames().add(kf);
-		timeLine.setOnFinished(event1 -> {
-			 parentContainer.getChildren().remove(background);
-		});
+
 		timeLine.play();
 	}
 	
@@ -334,8 +249,7 @@ public class TwoPlayersGameController implements Initializable
 	
 	@FXML
 	public void save(){
-		System.out.println("partie sauvegarder");
-	
+
 	    // appel du modèle (classe Part)
 		Part part = new Part(this.dimention , matrix , turnX);
 		part.newPart();
@@ -392,13 +306,7 @@ public class TwoPlayersGameController implements Initializable
 		pane.getChildren().add(line);
 		
 		
-		//Coloration des cases gagnantes
-		
-		/*for (int i=0 ; i<this.dimention ; i++) {
-			combo.tiles[i].setStyle("-fx-background-color : yellow");
-		}*/
-		
-		
+
 		// changement du texte par le symbole du gagnan
 		tour.setText("Congratulations :  " + combo.tiles[0].getText() + " is the winner !");
 		tour.setStyle("-fx-translate-x : -50 ; -fx-font-size : 25");
@@ -427,7 +335,6 @@ public class TwoPlayersGameController implements Initializable
 	
 	
 	private class Combo{
-		//ArrayList<Tile> tiles = new ArrayList<Tile>();
 		private Tile[] tiles;
 		
 		public Combo(Tile...tiles ) {
@@ -437,20 +344,11 @@ public class TwoPlayersGameController implements Initializable
 			
 			if(tiles[0].getText().isEmpty())
 				return false;
-			
-	    	else if(dimention == 3)	
+
+	    	else if(dimention == 3)
 	    		
 			    return tiles[0].getText().equals(tiles[1].getText()) && tiles[0].getText().equals(tiles[2].getText());
-			
-	    	else if(dimention == 4)
-	    		return tiles[0].getText().equals(tiles[1].getText()) && tiles[0].getText().equals(tiles[2].getText()) 
-	    				&& tiles[0].getText().equals(tiles[3].getText());
-			
-	    	else if(dimention == 5)
-	    		return tiles[0].getText().equals(tiles[1].getText()) && tiles[0].getText().equals(tiles[2].getText()) 
-	    				&& tiles[0].getText().equals(tiles[3].getText()) && tiles[0].getText().equals(tiles[4].getText());
-			
-	    //	else if(dimention == 6)
+
 	    		return tiles[0].getText().equals(tiles[1].getText()) && tiles[0].getText().equals(tiles[2].getText()) 
 	    				&& tiles[0].getText().equals(tiles[3].getText()) && tiles[0].getText().equals(tiles[4].getText())
 	    				&& tiles[0].getText().equals(tiles[5].getText());
@@ -566,11 +464,7 @@ public class TwoPlayersGameController implements Initializable
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		  // inisialiser la comboBox de couleur
-	//	String[] colors = {"Rouge", "Blanc", "Vert", "Aqua" , "Gris"};
-		//   comboBoxColorSquare.getItems().setAll(colors);
-		  // comboBoxColorBackground.getItems().setAll(colors);
-		   
+
 		  // initialiser la comboBox des tours (X ou O)
 		   comboBoxFirstTurn.getItems().setAll(this.symboles);
 		   
