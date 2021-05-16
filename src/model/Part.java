@@ -124,25 +124,5 @@ public class Part {
 		this.dimention = s.nextInt();
 		closeFileInReading();
 	}
-	
-	/*-----------------------------------------------*/
-	
-/*	public static void main(String[] args) {
-		String [][] yousra = new String[3][3] ;
-		
-		
-	    
-		
-		//new Part(4 , yousra).newPart();
-		new Part().getPart();
-		
-		 for (int i = 0; i < yousra.length; i++) {
-			for (int j = 0; j < yousra.length; j++) {
-				System.out.print(yousra[i][j] + " ");
-			}
-			System.out.println();
-		}
-		
-	}
-*/
+
 }

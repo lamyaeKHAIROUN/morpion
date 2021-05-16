@@ -2,7 +2,7 @@ package vue;
 
 import javax.swing.*;
 
-import ia2.Configuration;
+import ai.Configuration;
 
 import java.awt.*;
 

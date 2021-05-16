@@ -1,4 +1,4 @@
-package ia2;
+package ai;
 
 import java.awt.*;
 

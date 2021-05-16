@@ -27,7 +27,7 @@
                   <Image url="@../img/Tic_tac_toe.gif" />
                </image>
             </ImageView>
-            <Button id="newPart" fx:id="newPart" layoutX="321.0" layoutY="319.0" mnemonicParsing="false" onAction="#newPart" prefHeight="73.0" prefWidth="257.0" text="New Game">
+            <Button id="newPart" fx:id="newPart" layoutX="319.0" layoutY="312.0" mnemonicParsing="false" onAction="#newPart" prefHeight="73.0" prefWidth="257.0" text="New Game">
                <cursor>
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
@@ -37,11 +37,12 @@
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Button>
-            <Button id="aide" fx:id="aide" layoutX="322.0" layoutY="416.0" mnemonicParsing="false" onAction="#aideButton" prefHeight="73.0" prefWidth="257.0" text="Help">
+            <Button id="aide" fx:id="aide" layoutX="319.0" layoutY="473.0" mnemonicParsing="false" onAction="#aideButton" prefHeight="61.0" prefWidth="257.0" text="Help">
                <cursor>
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Button>
+            <Button fx:id="config" layoutX="319.0" layoutY="400.0" mnemonicParsing="false" onAction="#configurer" prefHeight="61.0" prefWidth="257.0" text="Configuration" />
          </children>
          <stylesheets>
             <URL value="@menu.css" />

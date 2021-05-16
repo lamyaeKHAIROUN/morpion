@@ -1,25 +1,32 @@
 #background {
-    -fx-background-color: #0094ff;
+    -fx-background-color: #bd6f22;
 }
 
 .text-field {
     -fx-font-size: 12pt;
-    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-family: "emoji";
 }
+.Text{
+    -fx-color: #50230A;
 
+    -fx-font-family: "emoji";
+    -fx-font-size: 15pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #C8AA43;
+}
 .button {
     -fx-padding: 5 22 5 22;
     -fx-background-radius: 10;
-    -fx-background-color: #3a3a3a;
-    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-background-color: #50230A;
+    -fx-font-family: "emoji";
     -fx-font-size: 15pt;
     -fx-font-weight: bold;
-    -fx-text-fill: #d8d8d8;
+    -fx-text-fill: #C8AA43;
     -fx-background-insets: 0 0 0 0, 0, 1, 2;
 }
 
 .button:hover {
-    -fx-background-color: #003ba5;
+    -fx-background-color: #A75021;
 }
 
 
@@ -39,17 +46,25 @@
     -fx-background-color: derive(-fx-focus-color,30%);
 }
 
- #option {          
+#option {
     -fx-background-size: 100% 100%;
-	-fx-background-color: transparent;
-	-fx-border-style: none;
-	-fx-border-width: 0;
+    -fx-background-color: transparent;
+    -fx-border-style: none;
+    -fx-border-width: 0;
     -fx-border-insets: 0;
 }
 
 #option {
-	-fx-background-image: url('../img/option.png');
+    -fx-background-image: url('../img/option.png');
 }
+#gameCare{
+    -fx-background-color: #C29A49;
+
+}
+
+
+
+
 
 
 

@@ -9,6 +9,7 @@
     <file url="file://$PROJECT_DIR$/src/ai/Test.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ai/TransferFunction.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/controller/TwoPlayersGameController.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/controller/configurationController.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ia2/Coup.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ia2/Layer.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ia2/MultiLayerPerceptron.java" charset="UTF-8" />
@@ -16,7 +17,10 @@
     <file url="file://$PROJECT_DIR$/src/ia2/TanHyperbolicTransferFunction.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ia2/Test.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ia2/TransferFunction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/res/dataset" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/res/img/tic.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/res/layouts/configuration.fxml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/res/train_dev_test" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1252" />
   </component>
 </project>

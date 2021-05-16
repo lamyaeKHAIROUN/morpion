@@ -1,4 +1,4 @@
-package ia2;
+package ai;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

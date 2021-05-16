@@ -17,8 +17,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 
-import ia2.Board;
-import ia2.Configuration;
+import ai.Board;
+import ai.Configuration;
 
 public class ConfigurationView extends JPanel implements ActionListener {
 

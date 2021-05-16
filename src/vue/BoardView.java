@@ -11,12 +11,12 @@ import javax.swing.JPanel;
 import javax.swing.border.Border;
 import javax.swing.border.MatteBorder;
 
-import ia2.Action;
-import ia2.Board;
-import ia2.Configuration;
-import ia2.GameState;
-import ia2.Node;
-import ia2.Player;
+import ai.Action;
+import ai.Board;
+import ai.Configuration;
+import ai.GameState;
+import ai.Node;
+import ai.Player;
 
 public class BoardView extends JPanel implements MouseListener {
 

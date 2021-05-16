@@ -37,7 +37,8 @@ public class MenuController implements Initializable
 	@FXML
 	private StackPane parentContainer;
 	
-	
+	@FXML
+	private Button config;
     public void MenuControllerAction(Stage primaryStage) {
     	try 
 		{
@@ -107,7 +108,7 @@ public class MenuController implements Initializable
 	  @FXML
 	  
 	  public void pastToOnePlayerScene()throws IOException{
-		  redirect("SoloPlayerPanel" , soloGame);
+		  redirect("OnePlayerPanel" , soloGame);
 	  }
 	  
 	  
@@ -134,12 +135,9 @@ public class MenuController implements Initializable
 		  
 		  
 	  }
-	  
-	  
-	  
 
-	  
-	
-	
-	
+
+	public void configurer(ActionEvent event) throws IOException {
+		redirect("configuration" , config);
+	}
 }
