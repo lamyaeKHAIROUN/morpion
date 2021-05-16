@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="background" prefHeight="686.0" prefWidth="900.0" style="-fx-background-color: aqua;" stylesheets="@game.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SoloPlayerGameController">
+   <children>
+      <ImageView fx:id="image" fitHeight="60.0" fitWidth="300.0" layoutX="347.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="612.0" AnchorPane.leftAnchor="347.0" AnchorPane.rightAnchor="348.60655212402344" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@../img/Tic_tac_toe.gif" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+   	  <Button fx:id="returnMenu" layoutX="24.0" layoutY="620.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="50.0" prefWidth="143.0" text="Retour" AnchorPane.topAnchor="620.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      
+      <Pane fx:id="pane" layoutY="110.0" prefHeight="510" prefWidth="510" style="" AnchorPane.topAnchor="110.0" />
+      
+      <Pane fx:id="paneMenu" layoutX="546.0" layoutY="88.0" prefHeight="510.0" prefWidth="350.0" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="546.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="88.0">
+         <children>
+            <Pane fx:id="paneColor" layoutX="4.0" layoutY="333.0" prefHeight="61.0" prefWidth="342.0">
+               <children>
+                  <Text layoutX="6.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Couleur du carré" />
+                  <ComboBox fx:id="comboBoxColorSquare" layoutX="7.0" layoutY="23.0" onAction="#changeGameSquareColor" prefHeight="28.0" prefWidth="143.0" />
+                  <ComboBox fx:id="comboBoxColorBackground" layoutX="179.0" layoutY="23.0" onAction="#changeBackgroundColor" prefHeight="28.0" prefWidth="143.0" />
+                  <Text layoutX="180.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Couleur du font" />
+               </children>
+            </Pane>
+            <Pane fx:id="paneTurn" layoutX="4.0" layoutY="401.0" prefHeight="61.0" prefWidth="342.0">
+               <children>
+                  <Text layoutX="6.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Premier Tour" />
+                  <ComboBox fx:id="comboBoxFirstTurn" layoutX="7.0" layoutY="23.0" onAction="#changeFirstTurn" prefHeight="28.0" prefWidth="143.0" />
+                  <ComboBox fx:id="comboBoxColorBackground1" layoutX="179.0" layoutY="23.0" onAction="#changeBackgroundColor" prefHeight="28.0" prefWidth="143.0" />
+                  <Text layoutX="180.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choix du symbole" />
+               </children>
+            </Pane>
+            <ImageView fx:id="bonhommeImg" fitHeight="60.0" fitWidth="37.0" layoutX="80.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/bonhomme.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="robotImg" fitHeight="60.0" fitWidth="58.0" layoutX="224.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/robotro.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="156.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 25; -fx-font-weight: bold;" text="Vs" />
+         </children>
+      </Pane>
+      <Pane layoutX="564.0" layoutY="620.0" prefHeight="50.0" prefWidth="314.0" AnchorPane.topAnchor="620.0">
+         <children>
+            
+                  
+            <Button fx:id="valider" layoutY="3.0" prefHeight="45.0" prefWidth="143.0" style="-fx-background-color: green;" text="Rejouer" />
+            <Button fx:id="save" layoutX="152.0" layoutY="2.0" onAction="#save" prefHeight="45.0" prefWidth="158.0" style="-fx-background-color : orange" text="Sauvegarde" />
+         </children>
+      </Pane>
+      
+   </children>
+</AnchorPane>

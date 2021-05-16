@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="686.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AideController">
+   <center>
+      <Pane prefHeight="676.0" prefWidth="1037.0" style="-fx-background-color: #cd99e2;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="294.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aide" textAlignment="CENTER" wrappingWidth="276.3125">
+               <font>
+                  <Font name="Arial" size="32.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="16.0" arcWidth="15.0" fill="WHITE" height="482.0" layoutX="18.0" layoutY="89.0" stroke="BLACK" strokeType="INSIDE" width="857.0" />
+            <Text layoutX="33.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Home vs Home" wrappingWidth="187.6708984375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Button fx:id="retour" layoutX="734.0" layoutY="595.0" mnemonicParsing="false" onAction="#returnMenu" prefHeight="48.0" prefWidth="144.0" style="-fx-background-color: #3a3a3a;" text="Retour" textFill="#d8d8d8">
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Button>
+            <Text layoutX="65.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Vous avez la possibilité de jouer avec les deux boutons de la sourie , un bouton dessine le X et l'autre le O. Vous avez des options a droite pour controler comme vous vloulez ." wrappingWidth="662.13671875" />
+            <Text layoutX="33.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Home vs Machine" wrappingWidth="224.6708984375">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="65.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Du même vous avez des options à gauche , choisissez vortre configuration puis cliquez sur démarrer , et le jeux va commencer contre l'ordinateur. Pour changer la couleur du carré choisissez la depuis la liste et cliquez aussi sur démarrer." wrappingWidth="662.13671875" />
+            <Text layoutX="254.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="&lt;&lt; Merci d'avoir installé notre jeu &gt;&gt;" wrappingWidth="356.13671875" />
+         </children>
+         <stylesheets>
+   </stylesheets>
+      </Pane>
+   </center>
+</BorderPane>

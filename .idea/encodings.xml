@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/ai/Coup.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ai/Layer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ai/MultiLayerPerceptron.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ai/SigmoidalTransferFunction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ai/TanHyperbolicTransferFunction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ai/Test.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ai/TransferFunction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/controller/TwoPlayersGameController.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/ia2/Coup.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ia2/Layer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ia2/MultiLayerPerceptron.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ia2/SigmoidalTransferFunction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ia2/TanHyperbolicTransferFunction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ia2/Test.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ia2/TransferFunction.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/res/img/tic.png" charset="UTF-8" />
+    <file url="PROJECT" charset="windows-1252" />
+  </component>
+</project>
